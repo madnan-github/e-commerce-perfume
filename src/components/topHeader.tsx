@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { MdOutlineMail } from "react-icons/md";
 import { HiOutlinePhone } from "react-icons/hi";
@@ -8,7 +7,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
-import { animate } from 'framer-motion';
 export default function TopHeader() {
   return (
     <footer className="text-white body-font bg-[#474747]">
