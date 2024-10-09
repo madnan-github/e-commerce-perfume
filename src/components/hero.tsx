@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="relative w-full h-screen">
       <Image
-        src={require('../../public/picture/header-pics/hero-bg.png')}
+        src='/picture/header-pics/hero-bg.png'
         alt="Various food items including vegetables, salad, and dips"
         layout="fill"
         objectFit="cover"

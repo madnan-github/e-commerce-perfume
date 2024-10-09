@@ -15,7 +15,7 @@ export default function Navbar() {
               alt="logo"
               width={56}
               height={55}
-              src={require("../../public/picture/header-pics/food-logo.png")}
+              src="/picture/header-pics/food-logo.png"
               className="animate-bounce"
             />
            

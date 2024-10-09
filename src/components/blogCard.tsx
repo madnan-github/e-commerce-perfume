@@ -1,6 +1,5 @@
-
 import {
-    Card, CardHeader, CardTitle, CardDescription, CardContent 
+    Card, CardHeader, CardTitle, CardDescription 
    } from "@/components/ui/card"
 import Image from "next/image";
 const articles = [

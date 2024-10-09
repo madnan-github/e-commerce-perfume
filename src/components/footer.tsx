@@ -17,7 +17,7 @@ export default function Footer() {
               alt="logo"
               width={56}
               height={55}
-              src={require("../../public/picture/footer/japanese-food-logo.png")}
+              src="/picture/footer/japanese-food-logo.png"
             />
             <span className="playfair-display-sc-black-italic ml-3 text-xl text-white">Bistro Bliss</span>
           </Link>
@@ -149,7 +149,7 @@ export default function Footer() {
              alt="name"
              width={400}
              height={400}
-             src={require("../../public/picture/footer/steve-1.png")}/>
+             src="/picture/footer/steve-1.png"/>
              </Link>
           </div>
           <div className='flex'>
@@ -159,7 +159,7 @@ export default function Footer() {
                alt="name"
                width={400}
                height={400}
-               src={require("../../public/picture/footer/ella-olsson-3.png")}/>
+               src="/picture/footer/ella-olsson-3.png"/>
                 </Link>
           </div>
 </div>
@@ -171,7 +171,7 @@ export default function Footer() {
                alt="name"
                width={400}
                height={400}
-               src={require("../../public/picture/footer/fries-2.png")}/>
+               src="/picture/footer/fries-2.png"/>
                 </Link>
             </div>
             <div>
@@ -181,7 +181,7 @@ export default function Footer() {
                alt="name"
                width={400}
                height={400}
-               src={require("../../public/picture/footer/ash-4.png")}/>
+               src="/picture/footer/ash-4.png"/>
                 </Link>
             </div> 
     </div>       

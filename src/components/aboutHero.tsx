@@ -12,7 +12,7 @@ export default function AboutHero() {
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative">
     <Image 
         alt='about-hero'
-        src={require('../../public/picture/about/about-hero.png')}
+        src='/picture/about/about-hero.png'
         width={599}
         height={566}
              />

@@ -1,4 +1,3 @@
-
 export default function BlogSection() {
   return (
     <section className="text-gray-600 body-font">
