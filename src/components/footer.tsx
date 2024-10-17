@@ -1,201 +1,103 @@
-"use client"
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { CiTwitter } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa6";
-export default function Footer() {
-  return (
-    <footer className="text-white bg-[#474747] body-font">
-    <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-      <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      
-         <Link href={'/'} className="flex  font-medium items-center text-gray-900 mb-4 md:mb-0 mt-10">
-            <Image
-              alt="logo"
-              width={56}
-              height={55}
-              src="/picture/footer/japanese-food-logo.png"
-            />
-            <span className="playfair-display-sc-black-italic ml-3 text-xl text-white">Bistro Bliss</span>
-          </Link>
+import { MdEmail } from "react-icons/md";
+import { FiInstagram } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa6";
+import { LiaFacebookSquare } from "react-icons/lia";
+import { BsGlobe2 } from "react-icons/bs";
+import Link from "next/link";
 
-                    {/*  */}
-       
-        <p className="mt-2 text-sm text-[#ADB29E]">
-          In the new era of technology we look a in the future with certainty and pride to for our company and.
-        </p>
-         {/* icon */}
-         <div className="flex gap-2 mt-2 ">
-         
-         <div className="flex  p-1 bg-[#AD343E] rounded-full">
-            <Link href={'/'} >
-             <FaFacebookF  className="text-white  w-[27.17] h-[27.17] rounded-full gap-1 "/>
-             </Link>
+export default function Footernew() {
+    return (
+        <>
+            {/* 1 */}
+            <div className='flex w-[1366px] h-[86px] items-center mt-10 px-40 font-Montserrat bg-gradient-to-b from-[#F5E8CB] to-[#FFFFFF]'>
+                <div className="w-[60%]">
+                    <p className="text-lg font-Montserrat">Souscrire a la newsletter pour rester a jour sur les derniers produits, des promtions spéciales et autres informations pour votre consommation</p>
+                </div>
+                <div className="flex relative w-[40%] justify-end items-center" >
+                    <input type='email' placeholder="@EMAIL" className=" w-[369px] h-[32.97px] px-4 ml-2 text-sm font-semibold text-[#A09D94] rounded-3xl"></input>
+                    <div className="flex absolute mr-6"><MdEmail /></div>
+                </div>
             </div>
-            <div className="flex  p-1 bg-[#AD343E] rounded-full">
-             <Link href={'/'} className="text-white w-[27.17] h-[27.17] rounded-full ">
-             <FaInstagram />
-             </Link> 
+            {/* 2 */}
+            <div className='w-[1366px] h-[318px] text-center mt-16 px-40 text-2xl font-bold font-Montserrat tracking-widest '>
+                LEURS AVIS
+                <div className='flex justify-center text-start mt-6 w-[1034px] h-[210px] text-[#000000] font-extralight tracking-wider'>
+
+                    <div className="bg-[#F1EFEF] mx-8 text-[10px] ">
+                        <div className="text-sm p-4">Bons produits, gamme de plus en plus large. Une vraie recherche sur le zéro déchet, avec le souci d'une amélioration continuelle. Livraison à vélo fiable et service client très sympa et efficace. Je recommande vivement.</div>
+                        <div className="text-sm font-bold text-end pr-4 hover:text-[#FAD261]">-Céline M. sur Google Avis</div>
+                    </div>
+                    <div className="bg-[#F1EFEF] mx-8 text-sm">
+                        <div className="text-sm p-4">Bons produits, gamme de plus en plus large. Une vraie recherche sur le zéro déchet, avec le souci d'une amélioration continuelle. Livraison à vélo fiable et service client très sympa et efficace. Je recommande vivement.</div>
+                        <div className="text-sm font-bold text-end pr-4 hover:text-[#FAD261]">-Céline M. sur Google Avis</div>
+                    </div>
+                    <div className="bg-[#F1EFEF] mx-8 text-sm">
+                        <div className="text-sm p-4">Bons produits, gamme de plus en plus large. Une vraie recherche sur le zéro déchet, avec le souci d'une amélioration continuelle. Livraison à vélo fiable et service client très sympa et efficace. Je recommande vivement.</div>
+                        <div className="text-sm font-bold text-end pr-4 hover:text-[#FAD261]">-Céline M. sur Google Avis</div>
+                    </div>
+                </div>
             </div>
-            <div className="flex  p-1 bg-[#AD343E] rounded-full">
-             <Link href={'/'} className="text-white w-[27.17] h-[27.17] rounded-full ">
-             <CiTwitter />
-             </Link> 
+            {/* 3 */}
+            <div className='flex justify-between w-[1366px] h-[150px] mt-16 px-16 font-Montserrat '>
+                <div className='flex justify-center w-[918px] h-[164px]'>
+                    <div className="mx-10 ">
+                        <h2 className="mb-3 font-extrabold">PRODUITS</h2>
+                        <ul className="leading-8" >
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Nouvels arrivages</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">meilleures ventes</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">produits populaire</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">vente</li></Link>
+                        </ul>
+                    </div>
+                    <div className="mx-10 ">
+                        <h2 className="mb-3 font-extrabold">A PROPOS</h2>
+                        <ul className="leading-8" >
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Nos engagements</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Nos producteurs </li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Equipe</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Presse</li></Link>
+                        </ul>
+                    </div>
+                    <div className="mx-10 ">
+                        <h2 className="mb-3 font-extrabold">CONTACT</h2>
+                        <ul className="leading-8" >
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Contact</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Entreprise</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Nous rejoindre</li></Link>
+                        </ul>
+                    </div>
+                    <div className="mx-10 ">
+                        <h2 className="mb-3 font-extrabold">AIDE</h2>
+                        <ul className="leading-8" >
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">FAQ</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Livraison</li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Paiement </li></Link>
+                            <Link href="/"><li className="hover:text-[#B4B2B2]">Consigne</li></Link>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div className="className=' items-center mb-3 mr-36 font-extrabold">Suivez nous sur
+                    <div className="flex justify-evenly mt-4 text-2xl leading-8" >
+                        <Link href="/" className="hover:text-[#B4B2B2]"><FaWhatsapp /></Link>
+                        <Link href="/" className="hover:text-[#B4B2B2]"><FaWhatsapp /></Link>
+                        <Link href="/" className="hover:text-[#B4B2B2]"><LiaFacebookSquare /></Link>
+                    </div>
+                </div>
             </div>
-            <div className="flex  p-1 bg-[#AD343E] rounded-full">
-             <Link href={'/'} className="text-white w-[27.17] h-[27.17] rounded-full ">
-             <FaGithub />
-             </Link> 
-             </div>
-           </div>
-            {/* icon end */}
-      </div>
-{/* 1 */}
-      <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-       
-        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 className="dm-sans title-font font-medium text-white tracking-widest text-sm mb-3">
-            Pages
-          </h2>
-          <nav className="list-none mb-10 cursor-pointer">
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Home</p></Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">About</p></Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Menu</p></Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Pricing</p></Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Blog</p></Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Content</p></Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Delivery</p></Link>
-            </li>
-          </nav>
-        </div>
-        {/* 2 */}
-        <div className="lg:w-1/4 md:w-1/2 w-full px-4 ">
-        <h2 className="dm-sans title-font font-medium text-white tracking-widest text-sm mb-3">
-           Utility Pages
-          </h2>
-          <nav className="list-none mb-10 cursor-pointer ">
-            <li>
-                <Link href={'/'}>
-                <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Start Here</p>
-                </Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Styleguide</p>
-              </Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Password Protected</p>
-              </Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">404 Not Found</p>
-              </Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Licenses</p>
-              </Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">Changelog</p>
-              </Link>
-            </li>
-            <li>
-            <Link href={'/'}>
-              <p className="text-[#DBDFD0] hover:text-gray-800 py-2">View More</p>
-              </Link>
-            </li>
-          </nav>
-        </div>
-
-
-<div className="lg:w-1/4 md:w-1/2 w-full px-4 ">
-<Link href={'/'}>
-<p className="text-[16] text-white bold tracking-widest text-sm mb-3 cursor-pointer">
-            Follow Us On Instagram
-          </p></Link>
-<div className='flex gap-2'>
-<div className='flex'>
-          <Link href={'/menu'}>
-          <Image 
-          className='flex rounded-lg w-[400] h-[400]  hover:animate-ping'
-             alt="name"
-             width={400}
-             height={400}
-             src="/picture/footer/steve-1.png"/>
-             </Link>
-          </div>
-          <div className='flex'>
-          <Link href={'/menu'}>
-          <Image 
-          className='flex rounded-lg w-[400] h-[400]  hover:animate-ping'
-               alt="name"
-               width={400}
-               height={400}
-               src="/picture/footer/ella-olsson-3.png"/>
-                </Link>
-          </div>
-</div>
-  <div className='flex gap-2 mt-2 rounded-lg'>
-            <div className='flex'>
-            <Link href={'/menu'}>
-            <Image 
-            className='flex rounded-lg w-[400] h-[400] hover:animate-ping'
-               alt="name"
-               width={400}
-               height={400}
-               src="/picture/footer/fries-2.png"/>
-                </Link>
+            <div className='flex justify-between items-center w-[1366px] h-[63.64px] bg-[#000000] mt-10 font-Montserrat '>
+                <Link href='/'><div className='flex text-[28px] font-extrabold pt-2'>
+                    <div className='text-[#000000]'>GUI</div>
+                    <div className='text-[#787777]'>COS</div>
+                    <div className='text-[#B4B2B2]'>METIQUE</div>
+                </div></Link>
+                <div className="text-white">©2022 GuiCosmetique Beauty Care, tous droits reservés.</div>
+                <div className="flex justify-center items-center text-white mx-16">
+                <div className="mx-2"><BsGlobe2/></div>
+                <div>FRANCAIS</div>
+                </div>
             </div>
-            <div>
-            <Link href={'/menu'}>
-            <Image 
-             className='flex rounded-lg w-[400] h-[400] hover:animate-ping'
-               alt="name"
-               width={400}
-               height={400}
-               src="/picture/footer/ash-4.png"/>
-                </Link>
-            </div> 
-    </div>       
-      
-</div>
-
-
-<p className="text-sm text-[#ADB29E] sm:ml-6 sm:mt-0 mt-4">
-       Copyright © 2023 Hashtag Developer. All Rights Reserved
-             </p>
-
-      </div>
-    </div>
-  </footer>
-  
-  )
+        </>
+    )
 }
