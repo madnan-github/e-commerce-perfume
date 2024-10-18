@@ -5,7 +5,7 @@ export default function Section2() {
             <div className='flex relative max-w-[1366px] h[688px] px-36 font-Montserrat'>
                 {/* 1 */}
                 <div className="overflow-hidden  items-center">
-                    <Image width={566} height={688} alt="section2 Picture"
+                    <Image width={566} height={688} alt="section2 Image"
                         src="/assets/sec2img.png"
                         className=" hover:scale-110 duration-1000" />
                 </div>
