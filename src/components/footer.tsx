@@ -80,20 +80,20 @@ export default function Footernew() {
 
                 <div className="className=' items-center mb-3 mr-36 font-extrabold">Suivez nous sur
                     <div className="flex justify-evenly mt-4 text-2xl leading-8" >
-                        <Link href="/" className="hover:text-[#B4B2B2]"><FaWhatsapp /></Link>
+                        <Link href="/" className="hover:text-[#B4B2B2]"><FiInstagram /></Link>
                         <Link href="/" className="hover:text-[#B4B2B2]"><FaWhatsapp /></Link>
                         <Link href="/" className="hover:text-[#B4B2B2]"><LiaFacebookSquare /></Link>
                     </div>
                 </div>
             </div>
-            <div className='flex justify-between items-center w-[1366px] h-[63.64px] bg-[#000000] mt-10 font-Montserrat '>
-                <Link href='/'><div className='flex text-[28px] font-extrabold pt-2'>
-                    <div className='text-[#000000]'>GUI</div>
+            <div className='flex justify-between items-center w-[1366px] h-[63.64px] bg-[#000000] mt-10 px-20 font-Montserrat '>
+                <Link href='/'><div className='flex text-[28px] font-extrabold pt-2 '>
+                    <div className='text-white'>GUI</div>
                     <div className='text-[#787777]'>COS</div>
                     <div className='text-[#B4B2B2]'>METIQUE</div>
                 </div></Link>
                 <div className="text-white">©2022 GuiCosmetique Beauty Care, tous droits reservés.</div>
-                <div className="flex justify-center items-center text-white mx-16">
+                <div className="flex justify-center items-center text-white">
                 <div className="mx-2"><BsGlobe2/></div>
                 <div>FRANCAIS</div>
                 </div>

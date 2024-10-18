@@ -1,5 +1,5 @@
 "use client"
-import ContactFooter from "@/components/contactFooter";
+
 import { motion } from "framer-motion"
 
 export default function Contact() {
@@ -101,9 +101,6 @@ export default function Contact() {
           </div>
         </div>
         </motion.div>
-        {/* footer */}
-        <ContactFooter />
-        {/* footer */}
       </div>
     </section>
   );
