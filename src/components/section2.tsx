@@ -6,7 +6,7 @@ export default function Section2() {
                 {/* 1 */}
                 <div className="overflow-hidden  items-center">
                     <Image width={566} height={688} alt="section2 Picture"
-                        src="/assets/sec2_img.png"
+                        src="/assets/sec2img.png"
                         className=" hover:scale-110 duration-1000" />
                 </div>
                 {/* 2 */}
